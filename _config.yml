@@ -19,3 +19,6 @@ paginate: 5
 # Sass
 sass:
     style: :compressed
+
+# Gems
+gems: [jekyll-paginate]
