@@ -26,10 +26,14 @@
         letter-spacing: 1px;
 
         // Force default text colour [as post-header is wrapped by a link]
-        color: $text-colour;
+        a {
+            color: $text-colour;
+        }
 
         // However let the normal hover colour apply
-        &:hover { color: $link-colour-over; }
+        a:hover { 
+            color: $link-colour-over; 
+        }
     }
 
     .post-header-date {
@@ -219,6 +223,13 @@
         font-size: $caption-text-size;
         margin-right: 5px;
         letter-spacing: 1px;
+
+        a {
+            color: $text-colour;
+        }
+        a:hover {
+            color: $link-colour-over;
+        }
     }
 
     .post-footer-location {

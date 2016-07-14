@@ -2,8 +2,9 @@
 layout: post
 title:  "under construction"
 date:   2016-07-14 8:28:30
-categories: admin
-location: Saratoga, California, USA
+categories: []
+tags: [admin]
+location: Saratoga, California
 
 ---
 

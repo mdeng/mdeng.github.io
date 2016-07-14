@@ -1,7 +1,9 @@
+<!-- for tag support -->
+
 <section class="post">
     <div class="post-header post-header--dw">
-        <a href="{{ site.baseurl }}{{ include.post.url }}"><h3 class="post-header-title">{{ include.post.title }}</h3></a>
-        <h4 class="post-header-date">{{ post.date | date: "%-d %B %Y"}}</h4>
+        <h3 class="post-header-title"><a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a></h3>
+        <h4 class="post-header-date">{{ include.post.date | date: "%-d %B %Y"}}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{{ include.post.location }}</h4>
     </div>
     <div class="post-body">
         {{ include.content }}
@@ -9,7 +11,7 @@
     <div class="post-footer">
         <ul class="post-footer-tags">
             {% for tag in include.post.tags %}
-              <li class="post-footer-tag">#{{ tag }}</li>
+              <li class="post-footer-tag"><a href="/tags/{{ tag }}">#{{ tag }}</a></li>
             {% endfor %}
         </ul>
         <!--a href="https://www.google.com/maps/search/{{ include.post.location }}" target="_blank" class="post-footer-location">{{ include.post.location }}</a-->

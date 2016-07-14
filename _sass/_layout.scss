@@ -66,6 +66,20 @@ header {
     }
 }
 
+.tag-header {
+    &:before  {
+        content: "tagged:"
+    }
+    
+    font-family: $title-font;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: $caption-text-size;
+    margin-right: 5px;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+}
+
 h1 {
     font-family: $title-font;
     font-size: $regular-text-size;
