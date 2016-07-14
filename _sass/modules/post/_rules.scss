@@ -25,20 +25,20 @@
         text-transform: uppercase;
         letter-spacing: 1px;
 
-        // Force default text colour [as post-header is wrapped by a link]
+        // Force default text color [as post-header is wrapped by a link]
         a {
-            color: $text-colour;
+            color: $text-color;
         }
 
-        // However let the normal hover colour apply
+        // However let the normal hover color apply
         a:hover { 
-            color: $link-colour-over; 
+            color: $link-color-over; 
         }
     }
 
     .post-header-date {
         font-family: $caption-font;
-        font-color: $caption-colour;
+        font-color: $caption-color;
         font-size: 12px;
         font-weight: normal;
         color: #444;
@@ -140,7 +140,7 @@
         font-size: 14px;
         font-family: $caption-font;
         font-style: italic;
-        color: $caption-colour;
+        color: $caption-color;
         padding: 10px 0px 13px;
         text-align: left;
         margin-top: 5px;
@@ -199,7 +199,7 @@
     .post-footer {
         margin-top: 35px;
         padding-bottom: 15px;
-        border-bottom: 1px solid $border-colour;
+        border-bottom: 1px solid $border-color;
 
         // Both children are floated, so use a clearfix on the parent
         @include clearfix;
@@ -225,10 +225,10 @@
         letter-spacing: 1px;
 
         a {
-            color: $text-colour;
+            color: $text-color;
         }
         a:hover {
-            color: $link-colour-over;
+            color: $link-color-over;
         }
     }
 
@@ -236,7 +236,7 @@
         font-family: $title-font;
         font-weight: bold;
         font-size: $caption-text-size;
-        color: $caption-colour;
+        color: $caption-color;
         float: right;
         min-height: $post-footer-location-height;
         line-height: $post-footer-location-line-height;
@@ -261,7 +261,7 @@
         }
 
         &:hover {
-            color: $link-colour;
+            color: $link-color;
         }
     }
 }

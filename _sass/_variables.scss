@@ -6,14 +6,14 @@
     $subtitle-font: 'American Typewriter', Courier, serif !default;
     $caption-font: 'Chaparral Pro', 'American Typewriter', Courier, serif !default;
 
-    // Colours
-    $link-colour: #999 !default;
-    $link-colour-over: darken($link-colour, 15%) !default;
-    $text-colour: #222 !default;
-    $inverse-text-colour: #eee !default; // For use on dark backgrounds
-    $subtitle-colour: #aaaaaa !default;
-    $caption-colour: #777 !default;
-    $border-colour: #e5e5e5 !default;
+    // colors
+    $link-color: #999 !default;
+    $link-color-over: darken($link-color, 15%) !default;
+    $text-color: #222 !default;
+    $inverse-text-color: #eee !default; // For use on dark backgrounds
+    $subtitle-color: #aaaaaa !default;
+    $caption-color: #777 !default;
+    $border-color: #e5e5e5 !default;
 
     // Sizes
     $regular-text-size: 14px !default;

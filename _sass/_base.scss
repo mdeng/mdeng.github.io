@@ -11,17 +11,17 @@ body {
 body {
     font-family: $regular-font;
     font-size: $regular-text-size;
-    color: $text-colour;
+    color: $text-color;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
 }
 
 a {
-    color: $link-colour;
+    color: $link-color;
     text-decoration: none;
 
     &:hover {
-        color: $link-colour-over;
+        color: $link-color-over;
     }
 }
