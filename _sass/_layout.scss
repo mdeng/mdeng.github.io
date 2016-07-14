@@ -6,7 +6,9 @@
     top: 0;
     left: 0;
     right: 0;
+    background-color: #333;
 
+/*
     // Non-retina device
     background-image: url($banner);
 
@@ -19,6 +21,8 @@
     @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min--moz-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx) {
         background-image: url($banner-3x);
     }
+*/
+
 }
 
 #wrap {
@@ -85,6 +89,9 @@ footer {
     width: 100%;
     display: table;
 
+    background-color: #333;
+
+/*
     // Non-retina device
     background-image: url($banner);
 
@@ -97,4 +104,6 @@ footer {
     @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min--moz-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx) {
         background-image: url($banner-3x);
     }
+*/
+
 }

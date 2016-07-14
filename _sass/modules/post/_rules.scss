@@ -5,53 +5,16 @@
     }
 
     .post-body {
-        p { line-height: 18px; }
+        margin-top: 10px;
+
+        p { 
+            line-height: 18px;
+        }
     }
 
     .post-header {
-        padding-left: 35px;
         min-height: $post-header-height;
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-color: transparent;
         margin-bottom: 15px;
-    }
-
-    .post-header--dw,
-    .post-header--ar {
-        background-size: 24px;
-    }
-
-    .post-header--dw {
-        // Non-retina device
-        background-image: url($watch-1);
-
-        // Retina @2x device
-        @media only screen and (-webkit-min-device-pixel-ratio: 1.2), only screen and (min--moz-device-pixel-ratio: 1.2), only screen and (-o-min-device-pixel-ratio: 5/4), only screen and (min-device-pixel-ratio: 1.2), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.2dppx) {
-            background-image: url($watch-1-2x);
-            background-size: 25px;
-        }
-
-        // Retina @3x device
-        @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min--moz-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx) {
-            background-image: url($watch-1-3x);
-            background-size: 25px;
-        }
-    }
-
-    .post-header--ar {
-         // Non-retina device
-        background-image: url($watch-2);
-
-        // Retina @2x device
-        @media only screen and (-webkit-min-device-pixel-ratio: 1.2), only screen and (min--moz-device-pixel-ratio: 1.2), only screen and (-o-min-device-pixel-ratio: 5/4), only screen and (min-device-pixel-ratio: 1.2), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.2dppx) {
-            background-image: url($watch-2-2x);
-        }
-
-        // Retina @3x device
-        @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min--moz-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx) {
-            background-image: url($watch-2-3x);
-        }
     }
 
     .post-header-title {
@@ -71,20 +34,45 @@
 
     .post-header-date {
         font-family: $caption-font;
-        font-style: italic;
+        font-color: $caption-colour;
+        font-size: 12px;
         font-weight: normal;
         color: #444;
-        letter-spacing: 1px;
     }
 
     .post-image {
         font-size: 0;
+        margin-top: 20px;
         margin-bottom: 15px;
 
         img,
         video{
             width: 100%;
             max-width: 100%;
+        }
+    }
+
+    .post-image--half {
+        font-size: 0;
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+        img,
+        video{
+            width: 50%;
+            max-width: 50%;
+        }
+    }
+
+    .post-image--third {
+        font-size: 0;
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+        img,
+        video{
+            width: 33%;
+            max-width: 33%;
         }
     }
 
@@ -126,6 +114,20 @@
                 margin-right: 0;
             }
         }
+
+        .post-image--half {
+            img, video {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .post-image--third {
+            img, video {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
     }
 
     .post-image-caption {
@@ -135,9 +137,8 @@
         font-family: $caption-font;
         font-style: italic;
         color: $caption-colour;
-        background: #f6f6f6;
-        padding: 15px 20px 13px;
-        text-align: center;
+        padding: 10px 0px 13px;
+        text-align: left;
         margin-top: 5px;
 
         // Paragraphs within the caption should have no margin
@@ -155,12 +156,10 @@
 
     .post-image-caption-left {
         text-align: left;
-        padding-right: 10px;
     }
 
     .post-image-caption-right {
         text-align: right;
-        padding-left: 10px;
     }
 
     @media only screen and (max-width : 500px) {
